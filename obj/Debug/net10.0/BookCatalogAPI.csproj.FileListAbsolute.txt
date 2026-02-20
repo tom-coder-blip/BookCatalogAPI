@@ -96,3 +96,17 @@ C:\Users\vumat\Desktop\BookCatalogAPI\BookCatalogAPI\obj\Debug\net10.0\BookCatal
 C:\Users\vumat\Desktop\BookCatalogAPI\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.genruntimeconfig.cache
 C:\Users\vumat\Desktop\BookCatalogAPI\BookCatalogAPI\obj\Debug\net10.0\ref\BookCatalogAPI.dll
 C:\Users\vumat\Desktop\BookCatalogAPI\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.sourcelink.json
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.csproj.AssemblyReference.cache
+E:\BookCatalogAPI\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.AssemblyInfoInputs.cache
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.AssemblyInfo.cs
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.csproj.CoreCompileInputs.cache
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.RazorAssemblyInfo.cache
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.RazorAssemblyInfo.cs
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.sourcelink.json
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.dll
+E:\BookCatalogAPI\obj\Debug\net10.0\refint\BookCatalogAPI.dll
+E:\BookCatalogAPI\obj\Debug\net10.0\BookCatalogAPI.pdb

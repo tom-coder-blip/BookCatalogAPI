@@ -1,5 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-using BookCatalogAPI.Models;
+using Microsoft.AspNetCore.Mvc; // Provides attributes and classes for building API controllers
+using Microsoft.IdentityModel.Tokens; // Provides classes for handling JWT tokens and security
+using System.IdentityModel.Tokens.Jwt; // Provides classes for creating and validating JWT tokens
+using System.Security.Claims; // Provides classes for handling claims-based identity, which is used in JWT tokens to represent user information and permissions
+using System.Text; // Provides classes for encoding and decoding text, which is used for handling the secret key in JWT token generation and validation
+using BookCatalogAPI.Models; // for models
 
 namespace BookCatalogAPI.Controllers
 {
@@ -30,6 +34,40 @@ namespace BookCatalogAPI.Controllers
             Users.Add(user);
 
             return Ok(new { Message = "Registration successful", UserId = user.Id });
+        }
+
+        // POST: api/auth/login
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] User loginUser)
+        {
+            var user = Users.FirstOrDefault(u => u.Username == loginUser.Username && u.Password == loginUser.Password);
+
+            if (user == null)
+            {
+                return Unauthorized("Invalid credentials.");
+            }
+
+            // Create JWT token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes("SuperSecretKey12345_SuperSecretKey12345");
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.Name, user.Username),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var jwt = tokenHandler.WriteToken(token);
+
+            return Ok(new { Token = jwt });
         }
     }
 }
