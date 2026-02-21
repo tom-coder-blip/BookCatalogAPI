@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BookCatalogAPI\\BookCatalogAPI.csproj": {}
+    "C:\\Users\\vumat\\Desktop\\BookCatalogAPI\\BookCatalogAPI\\BookCatalogAPI.csproj": {}
   },
   "projects": {
-    "E:\\BookCatalogAPI\\BookCatalogAPI.csproj": {
+    "C:\\Users\\vumat\\Desktop\\BookCatalogAPI\\BookCatalogAPI\\BookCatalogAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookCatalogAPI\\BookCatalogAPI.csproj",
+        "projectUniqueName": "C:\\Users\\vumat\\Desktop\\BookCatalogAPI\\BookCatalogAPI\\BookCatalogAPI.csproj",
         "projectName": "BookCatalogAPI",
-        "projectPath": "E:\\BookCatalogAPI\\BookCatalogAPI.csproj",
-        "packagesPath": "C:\\Users\\centuri\\.nuget\\packages\\",
-        "outputPath": "E:\\BookCatalogAPI\\obj\\",
+        "projectPath": "C:\\Users\\vumat\\Desktop\\BookCatalogAPI\\BookCatalogAPI\\BookCatalogAPI.csproj",
+        "packagesPath": "C:\\Users\\vumat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vumat\\Desktop\\BookCatalogAPI\\BookCatalogAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\centuri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vumat\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -64,6 +64,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.23, 8.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -72,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
