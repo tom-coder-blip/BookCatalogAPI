@@ -11,7 +11,7 @@ namespace BookCatalogAPI.Controllers
     [Route("api/[controller]")] // Sets the route for this controller to "api/auth"
     public class AuthController : ControllerBase
     {
-        private static List<User> Users = new List<User>(); // In-memory list to store users
+        public static List<User> Users = new List<User>(); // In-memory list to store users
 
         // POST: api/auth/register
         [HttpPost("register")]
