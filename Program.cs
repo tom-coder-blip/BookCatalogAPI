@@ -5,18 +5,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add CORS policy
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontend",
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:5173") // your frontend URL
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        });
-});
-
 // Add JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -91,8 +79,5 @@ app.UseAuthentication(); // Checks if the request has a valid token.
 app.UseAuthorization();  // Decides if the user is allowed to access the resource.
 
 app.MapControllers();
-
-// Use CORS
-app.UseCors("AllowFrontend");
 
 app.Run();
