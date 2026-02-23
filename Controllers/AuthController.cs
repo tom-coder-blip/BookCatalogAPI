@@ -67,7 +67,7 @@ namespace BookCatalogAPI.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var jwt = tokenHandler.WriteToken(token);
 
-            return Ok(new { Token = jwt, User = user });
+            return Ok(new { Token = jwt });
         }
     }
 }
